@@ -10,6 +10,10 @@ extern int playerCurrentX,playerCurrentY,playerCurrentRoom,playerSpeedX,playerSp
 extern Room room[];
 bool playermove()
 {
+    clear();
+    print(room[playerCurrentRoom]);
+    setcolor("white","blue");
+    print("我",playerCurrentX,playerCurrentY);
     char r=getch();
     clear();
     if (r=='W' || r=='w') 
